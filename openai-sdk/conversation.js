@@ -7,6 +7,7 @@ import {
 import "dotenv/config";
 import { z } from "zod";
 
+// Simulation of DB
 let sharedHistory = [];
 
 const executeSQ = tool({

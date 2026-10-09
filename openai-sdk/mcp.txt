@@ -1,0 +1,24 @@
+------------------------------------
+## Hosted MCP server tools
+
+LLM (gpt-4.1)
+
+agent = Agent(LLM(gpt-4.1), HostedMCPServer(;github'))
+
+result = run(agent, q);
+
+[Client] -> q 
+--> OpenAI Server (gpt-4.1) --> MCP Tool 
+--> Response from MCP --> OpenAI Server --> [Client]
+
+------------------------------------
+
+## Streamable HTTP MCP Servers
+
+[Client] --> q
+--> OpenAI Server (gpt-4.1) (MCP Tool Request)
+--> [Client] --> Will call the MCP server endpoint --> Response from MCP server
+--> MCP Response --> Send back to OpenAI Server
+--> OpenAI Server --> [Client]
+
+-----------------------------------------

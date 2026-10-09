@@ -1,0 +1,12 @@
+// To connect with claude (Cursor IDE)
+// Create new MCP server
+// Paste below in mcp.json
+
+{
+  "mcpServers": {
+    "weatherData": {
+      "command": "node",
+      "args": ["/c/My_Projects/Agentic-Coder/openai-sdk/mcp.js"]
+    }
+  }
+}

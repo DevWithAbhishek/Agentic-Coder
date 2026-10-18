@@ -1,8 +1,7 @@
 import OpenAI from "openai";
 import readLineSync from "readline-sync";
 
-const OPENAI_KEY =
-  "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";
+const OPENAI_KEY = dummy_value;
 
 const client = new OpenAI({
   apiKey: OPENAI_KEY,
